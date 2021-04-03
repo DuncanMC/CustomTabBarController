@@ -15,6 +15,10 @@
 		AE024A40261526AC0005FADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE024A3E261526AC0005FADC /* LaunchScreen.storyboard */; };
 		AE024A4B261526AC0005FADC /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A4A261526AC0005FADC /* TabBarControllerTests.swift */; };
 		AE024A56261526AD0005FADC /* TabBarControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */; };
+		AE024A67261527C30005FADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A66261527C30005FADC /* CustomTabBar.swift */; };
+		AE024A6C26152C750005FADC /* CALayer+ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */; };
+		AE024A71261531870005FADC /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A70261531870005FADC /* MyTabBarController.swift */; };
+		AE4A9F172617F158009704BA /* ShapeWithTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A9F162617F158009704BA /* ShapeWithTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		AE024A51261526AC0005FADC /* TabBarControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerUITests.swift; sourceTree = "<group>"; };
 		AE024A57261526AD0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE024A66261527C30005FADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+ColorExtensions.swift"; sourceTree = "<group>"; };
+		AE024A70261531870005FADC /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		AE4A9F162617F158009704BA /* ShapeWithTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeWithTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				AE024A33261526A90005FADC /* AppDelegate.swift */,
+				AE024A70261531870005FADC /* MyTabBarController.swift */,
 				AE024A35261526A90005FADC /* SceneDelegate.swift */,
 				AE024A37261526A90005FADC /* ViewController.swift */,
 				AE024A39261526A90005FADC /* Main.storyboard */,
+				AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */,
+				AE4A9F162617F158009704BA /* ShapeWithTabView.swift */,
+				AE024A66261527C30005FADC /* CustomTabBar.swift */,
 				AE024A3C261526AC0005FADC /* Assets.xcassets */,
 				AE024A3E261526AC0005FADC /* LaunchScreen.storyboard */,
 				AE024A41261526AC0005FADC /* Info.plist */,
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE024A6C26152C750005FADC /* CALayer+ColorExtensions.swift in Sources */,
+				AE024A67261527C30005FADC /* CustomTabBar.swift in Sources */,
+				AE4A9F172617F158009704BA /* ShapeWithTabView.swift in Sources */,
 				AE024A38261526A90005FADC /* ViewController.swift in Sources */,
 				AE024A34261526A90005FADC /* AppDelegate.swift in Sources */,
 				AE024A36261526A90005FADC /* SceneDelegate.swift in Sources */,
+				AE024A71261531870005FADC /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
