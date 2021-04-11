@@ -11,6 +11,11 @@ class CustomTabBar: UITabBar {
 
     var maskLayer = CAShapeLayer()
 
+    open override func sizeThatFits(_ size: CGSize) -> CGSize {
+        let newHeight = max(size.height, 100)
+        return CGSize(width: size.width, height: newHeight)
+    }
+
     override var frame: CGRect {
         didSet {
             configureMaskLayer()
@@ -33,11 +38,11 @@ class CustomTabBar: UITabBar {
     func     configureMaskLayer() {
         let rect = layer.bounds
         maskLayer.frame = rect
-        let circleBoxSize = rect.size.height * 1.25
+        let circleBoxSize: CGFloat = 140
         maskLayer.fillRule = .evenOdd
         let path = UIBezierPath(rect: rect)
         let circleRect = CGRect(x: rect.size.width/2 - circleBoxSize / 2,
-                                y: -circleBoxSize/2,
+                                y: -circleBoxSize/2 + 10,
                                 width: circleBoxSize,
                                 height: circleBoxSize)
         let circle = UIBezierPath.init(ovalIn: circleRect)

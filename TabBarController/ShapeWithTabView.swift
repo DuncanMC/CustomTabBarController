@@ -9,8 +9,9 @@ import UIKit
 
 class ShapeWithTabView: UIView {
 
-    var cornerRadius: CGFloat = 60
-    var tabRadius: CGFloat = 30
+    var cornerRadius: CGFloat = 15
+    var tabRadius: CGFloat = 70
+    var bevelRadius: CGFloat = 50
     var tabExtent: CGFloat = 0
 
     var shapeLayer = CAShapeLayer()
@@ -28,8 +29,8 @@ class ShapeWithTabView: UIView {
 
         // These are the corners of the "tab" that extends outside the view's normal bounds.
         let tabPoint1 = CGPoint(x: boxWidth / 2 + tabRadius, y: boxHeight)
-        let tabPoint2 = CGPoint(x: boxWidth / 2 + tabRadius, y: boxHeight + tabExtent + tabRadius * 2 )
-        let tabPoint3 = CGPoint(x: boxWidth / 2 - tabRadius, y: boxHeight + tabExtent + tabRadius * 2)
+        let tabPoint2 = CGPoint(x: boxWidth / 2 + tabRadius, y: boxHeight + tabExtent + tabRadius + bevelRadius )
+        let tabPoint3 = CGPoint(x: boxWidth / 2 - tabRadius, y: boxHeight + tabExtent + tabRadius + bevelRadius)
         let tabPoint4 = CGPoint(x: boxWidth / 2 - tabRadius , y: boxHeight)
 
         let path = CGMutablePath()
@@ -46,7 +47,7 @@ class ShapeWithTabView: UIView {
 //
         path.addArc(tangent1End: tabPoint1,
                     tangent2End: tabPoint2,
-                    radius: tabRadius)
+                    radius: bevelRadius)
         path.addArc(tangent1End: tabPoint2,
                     tangent2End: tabPoint3,
                     radius: tabRadius)
@@ -55,7 +56,7 @@ class ShapeWithTabView: UIView {
                     radius: tabRadius)
         path.addArc(tangent1End: tabPoint4,
                     tangent2End: point1,
-                    radius: tabRadius)
+                    radius: bevelRadius)
 
         path.addArc(tangent1End: point1,
                     tangent2End: point2,
