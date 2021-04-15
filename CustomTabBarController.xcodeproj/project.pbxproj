@@ -13,8 +13,6 @@
 		AE024A3B261526A90005FADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE024A39261526A90005FADC /* Main.storyboard */; };
 		AE024A3D261526AC0005FADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE024A3C261526AC0005FADC /* Assets.xcassets */; };
 		AE024A40261526AC0005FADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE024A3E261526AC0005FADC /* LaunchScreen.storyboard */; };
-		AE024A4B261526AC0005FADC /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A4A261526AC0005FADC /* TabBarControllerTests.swift */; };
-		AE024A56261526AD0005FADC /* TabBarControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */; };
 		AE024A67261527C30005FADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A66261527C30005FADC /* CustomTabBar.swift */; };
 		AE024A6C26152C750005FADC /* CALayer+ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */; };
 		AE024A71261531870005FADC /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A70261531870005FADC /* MyTabBarController.swift */; };
@@ -49,11 +47,7 @@
 		AE024A3F261526AC0005FADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE024A41261526AC0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE024A46261526AC0005FADC /* CustomTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE024A4A261526AC0005FADC /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
-		AE024A4C261526AC0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE024A51261526AC0005FADC /* CustomTabBarControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerUITests.swift; sourceTree = "<group>"; };
-		AE024A57261526AD0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE024A66261527C30005FADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+ColorExtensions.swift"; sourceTree = "<group>"; };
 		AE024A70261531870005FADC /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				AE024A32261526A90005FADC /* CustomTabBarController */,
-				AE024A49261526AC0005FADC /* TabBarControllerTests */,
-				AE024A54261526AC0005FADC /* TabBarControllerUITests */,
 				AE024A31261526A90005FADC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,24 +115,6 @@
 				AE024A41261526AC0005FADC /* Info.plist */,
 			);
 			path = CustomTabBarController;
-			sourceTree = "<group>";
-		};
-		AE024A49261526AC0005FADC /* TabBarControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE024A4A261526AC0005FADC /* TabBarControllerTests.swift */,
-				AE024A4C261526AC0005FADC /* Info.plist */,
-			);
-			path = TabBarControllerTests;
-			sourceTree = "<group>";
-		};
-		AE024A54261526AC0005FADC /* TabBarControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */,
-				AE024A57261526AD0005FADC /* Info.plist */,
-			);
-			path = TabBarControllerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE024A4B261526AC0005FADC /* TabBarControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE024A56261526AD0005FADC /* TabBarControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
