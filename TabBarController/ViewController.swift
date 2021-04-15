@@ -9,17 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var shapeView: ShapeWithTabView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .darkGray
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.yellow.cgColor
+        view.backgroundColor = .cyan
     }
 
     override func viewDidLayoutSubviews() {
-        shapeView.updateShapeLayerPath()
+        if let view = self.view as? ShapeWithTabView {
+            view.updateShapeLayerPath()
+        }
     }
 }
 

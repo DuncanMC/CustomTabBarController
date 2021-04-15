@@ -17,7 +17,8 @@ class MyTabBarController: UITabBarController {
 
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.black.cgColor
-        // Do any additional setup after loading the view.
+//        tabBar.isTranslucent = false
+
     }
     
 

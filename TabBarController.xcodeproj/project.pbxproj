@@ -18,6 +18,7 @@
 		AE024A67261527C30005FADC /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A66261527C30005FADC /* CustomTabBar.swift */; };
 		AE024A6C26152C750005FADC /* CALayer+ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */; };
 		AE024A71261531870005FADC /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE024A70261531870005FADC /* MyTabBarController.swift */; };
+		AE2A6B682627B1E300C14E74 /* CustomPolygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A6B672627B1E200C14E74 /* CustomPolygons.swift */; };
 		AE4A9F172617F158009704BA /* ShapeWithTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A9F162617F158009704BA /* ShapeWithTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		AE024A66261527C30005FADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+ColorExtensions.swift"; sourceTree = "<group>"; };
 		AE024A70261531870005FADC /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		AE2A6B672627B1E200C14E74 /* CustomPolygons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPolygons.swift; sourceTree = "<group>"; };
 		AE4A9F162617F158009704BA /* ShapeWithTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeWithTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				AE024A6B26152C750005FADC /* CALayer+ColorExtensions.swift */,
 				AE4A9F162617F158009704BA /* ShapeWithTabView.swift */,
 				AE024A66261527C30005FADC /* CustomTabBar.swift */,
+				AE2A6B672627B1E200C14E74 /* CustomPolygons.swift */,
 				AE024A3C261526AC0005FADC /* Assets.xcassets */,
 				AE024A3E261526AC0005FADC /* LaunchScreen.storyboard */,
 				AE024A41261526AC0005FADC /* Info.plist */,
@@ -275,6 +278,7 @@
 				AE4A9F172617F158009704BA /* ShapeWithTabView.swift in Sources */,
 				AE024A38261526A90005FADC /* ViewController.swift in Sources */,
 				AE024A34261526A90005FADC /* AppDelegate.swift in Sources */,
+				AE2A6B682627B1E300C14E74 /* CustomPolygons.swift in Sources */,
 				AE024A36261526A90005FADC /* SceneDelegate.swift in Sources */,
 				AE024A71261531870005FADC /* MyTabBarController.swift in Sources */,
 			);

@@ -10,16 +10,16 @@ import UIKit
 class ShapeWithTabView: UIView {
 
     var cornerRadius: CGFloat = 15
-    var tabRadius: CGFloat = 70
-    var bevelRadius: CGFloat = 50
-    var tabExtent: CGFloat = 0
+    var tabRadius: CGFloat = 30
+    var bevelRadius: CGFloat = 20
+    var tabExtent: CGFloat = 10
 
     var shapeLayer = CAShapeLayer()
     var maskLayer = CAShapeLayer()
 
     func buildShapeLayerPath() -> CGPath {
-        let boxWidth = min(bounds.size.width - 40, 686)
-        let boxHeight = min(bounds.size.height - 40 - tabRadius * 2 - tabExtent, 832)
+        let boxWidth = bounds.size.width
+        let boxHeight = bounds.size.height - 40 - tabRadius * 2 - tabExtent
 
         // These are the corners of the view's primary rectangle
         let point1 = CGPoint(x: 0, y: boxHeight)
@@ -33,34 +33,20 @@ class ShapeWithTabView: UIView {
         let tabPoint3 = CGPoint(x: boxWidth / 2 - tabRadius, y: boxHeight + tabExtent + tabRadius + bevelRadius)
         let tabPoint4 = CGPoint(x: boxWidth / 2 - tabRadius , y: boxHeight)
 
-        let path = CGMutablePath()
-        path.move(to: CGPoint(x: 0, y: boxHeight - cornerRadius))
-        path.addArc(tangent1End: point2,
-                    tangent2End: point3,
-                    radius: cornerRadius)
-        path.addArc(tangent1End: point3,
-                    tangent2End: point4,
-                    radius: cornerRadius)
-        path.addArc(tangent1End: point4,
-                    tangent2End: point1,
-                    radius: cornerRadius)
-//
-        path.addArc(tangent1End: tabPoint1,
-                    tangent2End: tabPoint2,
-                    radius: bevelRadius)
-        path.addArc(tangent1End: tabPoint2,
-                    tangent2End: tabPoint3,
-                    radius: tabRadius)
-        path.addArc(tangent1End: tabPoint3,
-                    tangent2End: tabPoint4,
-                    radius: tabRadius)
-        path.addArc(tangent1End: tabPoint4,
-                    tangent2End: point1,
-                    radius: bevelRadius)
+        //Create an array of PolygonPoints that we can use to build a mask path for our view
+        let points = [
+            PolygonPoint(point: point1, isRounded: true, customCornerRadius: cornerRadius),
+            PolygonPoint(point: point2, isRounded: true, customCornerRadius: cornerRadius),
+            PolygonPoint(point: point3, isRounded: true, customCornerRadius: cornerRadius),
+            PolygonPoint(point: point4, isRounded: true, customCornerRadius: cornerRadius),
+            PolygonPoint(point: tabPoint1, isRounded: true, customCornerRadius: bevelRadius),
+            PolygonPoint(point: tabPoint2, isRounded: true, customCornerRadius: tabRadius),
+            PolygonPoint(point: tabPoint3, isRounded: true, customCornerRadius: tabRadius),
+            PolygonPoint(point: tabPoint4, isRounded: true, customCornerRadius: bevelRadius),
+                      ]
 
-        path.addArc(tangent1End: point1,
-                    tangent2End: point2,
-                    radius: cornerRadius)
+        //Build our mask path
+        let path = buildPolygonPathFrom(points: points, defaultCornerRadius: 20)
 
         return path
     }
@@ -72,7 +58,7 @@ class ShapeWithTabView: UIView {
 
         //Configure a shape layer to draw an outline
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = UIColor.blue.cgColor
+        shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.lineWidth = 2
 
         //Configure a mask layer to mask the view to our custom shape

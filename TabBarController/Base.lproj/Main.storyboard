@@ -24,7 +24,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DgQ-mp-dfe"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="duu-9r-dcj" firstAttribute="centerX" secondItem="inK-ZR-hGQ" secondAttribute="centerX" id="Zya-Sr-03i"/>
                             <constraint firstItem="duu-9r-dcj" firstAttribute="top" secondItem="DgQ-mp-dfe" secondAttribute="top" constant="50" id="y24-pc-qIh"/>
@@ -40,7 +40,7 @@
         <scene sceneID="d7m-2R-SK2">
             <objects>
                 <viewController id="gJ4-8b-bCo" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="na8-6y-unK">
+                    <view key="view" contentMode="scaleToFill" id="na8-6y-unK" customClass="ShapeWithTabView" customModule="TabBarController" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -50,30 +50,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRX-Uc-3mU" customClass="ShapeWithTabView" customModule="TabBarController" customModuleProvider="target">
-                                <rect key="frame" x="10" y="85" width="394" height="708"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mpO-MV-knO"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="LRX-Uc-3mU" firstAttribute="leading" secondItem="mpO-MV-knO" secondAttribute="leading" constant="10" id="81q-5G-y0O"/>
                             <constraint firstItem="Phv-1d-rKY" firstAttribute="centerX" secondItem="na8-6y-unK" secondAttribute="centerX" id="JcA-SD-mE3"/>
                             <constraint firstItem="Phv-1d-rKY" firstAttribute="top" secondItem="mpO-MV-knO" secondAttribute="top" constant="10" id="SfP-Oc-sh2"/>
-                            <constraint firstItem="mpO-MV-knO" firstAttribute="trailing" secondItem="LRX-Uc-3mU" secondAttribute="trailing" constant="10" id="cbe-Gl-KE9"/>
-                            <constraint firstItem="mpO-MV-knO" firstAttribute="bottom" secondItem="LRX-Uc-3mU" secondAttribute="bottom" constant="20" id="f9U-ug-lF3"/>
-                            <constraint firstItem="LRX-Uc-3mU" firstAttribute="top" secondItem="Phv-1d-rKY" secondAttribute="bottom" constant="10" id="rrt-3j-hZb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="U74-eV-2JZ"/>
-                    <connections>
-                        <outlet property="shapeView" destination="LRX-Uc-3mU" id="4Fu-pC-E8F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVq-wt-HvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="-172"/>
+            <point key="canvasLocation" x="754" y="-236"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="3Ie-5j-zvu">
@@ -95,11 +84,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
