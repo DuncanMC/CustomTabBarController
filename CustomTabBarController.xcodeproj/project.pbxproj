@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE024A30261526A90005FADC /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE024A30261526A90005FADC /* CustomTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE024A33261526A90005FADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE024A35261526A90005FADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE024A37261526A90005FADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,10 +48,10 @@
 		AE024A3C261526AC0005FADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE024A3F261526AC0005FADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE024A41261526AC0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE024A46261526AC0005FADC /* TabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE024A46261526AC0005FADC /* CustomTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE024A4A261526AC0005FADC /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		AE024A4C261526AC0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE024A51261526AC0005FADC /* TabBarControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE024A51261526AC0005FADC /* CustomTabBarControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE024A55261526AC0005FADC /* TabBarControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerUITests.swift; sourceTree = "<group>"; };
 		AE024A57261526AD0005FADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE024A66261527C30005FADC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		AE024A27261526A90005FADC = {
 			isa = PBXGroup;
 			children = (
-				AE024A32261526A90005FADC /* TabBarController */,
+				AE024A32261526A90005FADC /* CustomTabBarController */,
 				AE024A49261526AC0005FADC /* TabBarControllerTests */,
 				AE024A54261526AC0005FADC /* TabBarControllerUITests */,
 				AE024A31261526A90005FADC /* Products */,
@@ -99,14 +99,14 @@
 		AE024A31261526A90005FADC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE024A30261526A90005FADC /* TabBarController.app */,
-				AE024A46261526AC0005FADC /* TabBarControllerTests.xctest */,
-				AE024A51261526AC0005FADC /* TabBarControllerUITests.xctest */,
+				AE024A30261526A90005FADC /* CustomTabBarController.app */,
+				AE024A46261526AC0005FADC /* CustomTabBarControllerTests.xctest */,
+				AE024A51261526AC0005FADC /* CustomTabBarControllerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE024A32261526A90005FADC /* TabBarController */ = {
+		AE024A32261526A90005FADC /* CustomTabBarController */ = {
 			isa = PBXGroup;
 			children = (
 				AE024A33261526A90005FADC /* AppDelegate.swift */,
@@ -122,7 +122,7 @@
 				AE024A3E261526AC0005FADC /* LaunchScreen.storyboard */,
 				AE024A41261526AC0005FADC /* Info.plist */,
 			);
-			path = TabBarController;
+			path = CustomTabBarController;
 			sourceTree = "<group>";
 		};
 		AE024A49261526AC0005FADC /* TabBarControllerTests */ = {
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE024A2F261526A90005FADC /* TabBarController */ = {
+		AE024A2F261526A90005FADC /* CustomTabBarController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE024A5A261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarController" */;
+			buildConfigurationList = AE024A5A261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarController" */;
 			buildPhases = (
 				AE024A2C261526A90005FADC /* Sources */,
 				AE024A2D261526A90005FADC /* Frameworks */,
@@ -158,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = TabBarController;
+			name = CustomTabBarController;
 			productName = TabBarController;
-			productReference = AE024A30261526A90005FADC /* TabBarController.app */;
+			productReference = AE024A30261526A90005FADC /* CustomTabBarController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE024A45261526AC0005FADC /* TabBarControllerTests */ = {
+		AE024A45261526AC0005FADC /* CustomTabBarControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE024A5D261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarControllerTests" */;
+			buildConfigurationList = AE024A5D261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarControllerTests" */;
 			buildPhases = (
 				AE024A42261526AC0005FADC /* Sources */,
 				AE024A43261526AC0005FADC /* Frameworks */,
@@ -176,14 +176,14 @@
 			dependencies = (
 				AE024A48261526AC0005FADC /* PBXTargetDependency */,
 			);
-			name = TabBarControllerTests;
+			name = CustomTabBarControllerTests;
 			productName = TabBarControllerTests;
-			productReference = AE024A46261526AC0005FADC /* TabBarControllerTests.xctest */;
+			productReference = AE024A46261526AC0005FADC /* CustomTabBarControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AE024A50261526AC0005FADC /* TabBarControllerUITests */ = {
+		AE024A50261526AC0005FADC /* CustomTabBarControllerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE024A60261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarControllerUITests" */;
+			buildConfigurationList = AE024A60261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarControllerUITests" */;
 			buildPhases = (
 				AE024A4D261526AC0005FADC /* Sources */,
 				AE024A4E261526AC0005FADC /* Frameworks */,
@@ -194,9 +194,9 @@
 			dependencies = (
 				AE024A53261526AC0005FADC /* PBXTargetDependency */,
 			);
-			name = TabBarControllerUITests;
+			name = CustomTabBarControllerUITests;
 			productName = TabBarControllerUITests;
-			productReference = AE024A51261526AC0005FADC /* TabBarControllerUITests.xctest */;
+			productReference = AE024A51261526AC0005FADC /* CustomTabBarControllerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AE024A2B261526A90005FADC /* Build configuration list for PBXProject "TabBarController" */;
+			buildConfigurationList = AE024A2B261526A90005FADC /* Build configuration list for PBXProject "CustomTabBarController" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,9 +234,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE024A2F261526A90005FADC /* TabBarController */,
-				AE024A45261526AC0005FADC /* TabBarControllerTests */,
-				AE024A50261526AC0005FADC /* TabBarControllerUITests */,
+				AE024A2F261526A90005FADC /* CustomTabBarController */,
+				AE024A45261526AC0005FADC /* CustomTabBarControllerTests */,
+				AE024A50261526AC0005FADC /* CustomTabBarControllerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,12 +305,12 @@
 /* Begin PBXTargetDependency section */
 		AE024A48261526AC0005FADC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE024A2F261526A90005FADC /* TabBarController */;
+			target = AE024A2F261526A90005FADC /* CustomTabBarController */;
 			targetProxy = AE024A47261526AC0005FADC /* PBXContainerItemProxy */;
 		};
 		AE024A53261526AC0005FADC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE024A2F261526A90005FADC /* TabBarController */;
+			target = AE024A2F261526A90005FADC /* CustomTabBarController */;
 			targetProxy = AE024A52261526AC0005FADC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -457,7 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TabBarController/Info.plist;
+				INFOPLIST_FILE = CustomTabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TabBarController/Info.plist;
+				INFOPLIST_FILE = CustomTabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTabBarController.app/CustomTabBarController";
 			};
 			name = Debug;
 		};
@@ -525,7 +525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTabBarController.app/CustomTabBarController";
 			};
 			name = Release;
 		};
@@ -570,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE024A2B261526A90005FADC /* Build configuration list for PBXProject "TabBarController" */ = {
+		AE024A2B261526A90005FADC /* Build configuration list for PBXProject "CustomTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE024A58261526AD0005FADC /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE024A5A261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarController" */ = {
+		AE024A5A261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE024A5B261526AD0005FADC /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE024A5D261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarControllerTests" */ = {
+		AE024A5D261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE024A5E261526AD0005FADC /* Debug */,
@@ -597,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE024A60261526AD0005FADC /* Build configuration list for PBXNativeTarget "TabBarControllerUITests" */ = {
+		AE024A60261526AD0005FADC /* Build configuration list for PBXNativeTarget "CustomTabBarControllerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE024A61261526AD0005FADC /* Debug */,

@@ -39,8 +39,8 @@
         <!--Item 1-->
         <scene sceneID="d7m-2R-SK2">
             <objects>
-                <viewController id="gJ4-8b-bCo" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="na8-6y-unK" customClass="ShapeWithTabView" customModule="TabBarController" customModuleProvider="target">
+                <viewController id="gJ4-8b-bCo" customClass="ViewController" customModule="CustomTabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="na8-6y-unK" customClass="ShapeWithTabView" customModule="CustomTabBarController" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -67,8 +67,8 @@
         <!--My Tab Bar Controller-->
         <scene sceneID="3Ie-5j-zvu">
             <objects>
-                <tabBarController id="Cfp-c2-SLg" customClass="MyTabBarController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxz-CK-pY8" customClass="CustomTabBar" customModule="TabBarController" customModuleProvider="target">
+                <tabBarController id="Cfp-c2-SLg" customClass="MyTabBarController" customModule="CustomTabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxz-CK-pY8" customClass="CustomTabBar" customModule="CustomTabBarController" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
